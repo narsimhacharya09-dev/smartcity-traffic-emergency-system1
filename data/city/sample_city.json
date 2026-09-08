@@ -1,0 +1,375 @@
+{
+  "nodes": [
+    {
+      "id": "HOSP_METRO",
+      "name": "Metro General Hospital",
+      "type": "HOSPITAL",
+      "lat": 37.7749,
+      "lng": -122.4194
+    },
+    {
+      "id": "HOSP_HEART",
+      "name": "City Heart Center",
+      "type": "HOSPITAL",
+      "lat": 37.7833,
+      "lng": -122.4089
+    },
+    {
+      "id": "FIRE_CENTRAL",
+      "name": "Central Fire Station",
+      "type": "FIRE_STATION",
+      "lat": 37.7695,
+      "lng": -122.4269
+    },
+    {
+      "id": "FIRE_WEST",
+      "name": "Westside Fire Station",
+      "type": "FIRE_STATION",
+      "lat": 37.7558,
+      "lng": -122.4450
+    },
+    {
+      "id": "POLICE_HQ",
+      "name": "Metro Central Police HQ",
+      "type": "POLICE_STATION",
+      "lat": 37.7785,
+      "lng": -122.4132
+    },
+    {
+      "id": "POLICE_NORTH",
+      "name": "North District Police Station",
+      "type": "POLICE_STATION",
+      "lat": 37.7925,
+      "lng": -122.4020
+    },
+    {
+      "id": "JUNC_CENTRAL",
+      "name": "Central Square Junction",
+      "type": "INTERSECTION",
+      "lat": 37.7750,
+      "lng": -122.4180
+    },
+    {
+      "id": "JUNC_EXPRESS",
+      "name": "Grand Expressway Junction",
+      "type": "INTERSECTION",
+      "lat": 37.7650,
+      "lng": -122.4100
+    },
+    {
+      "id": "JUNC_CLOVER",
+      "name": "North Cloverleaf",
+      "type": "INTERSECTION",
+      "lat": 37.7880,
+      "lng": -122.4150
+    },
+    {
+      "id": "JUNC_SOUTH",
+      "name": "South Highway Junction",
+      "type": "INTERSECTION",
+      "lat": 37.7500,
+      "lng": -122.4200
+    },
+    {
+      "id": "RES_OAKRIDGE",
+      "name": "Oakridge Heights",
+      "type": "RESIDENTIAL",
+      "lat": 37.7600,
+      "lng": -122.4300
+    },
+    {
+      "id": "RES_RIVERDALE",
+      "name": "Riverdale Colony",
+      "type": "RESIDENTIAL",
+      "lat": 37.7450,
+      "lng": -122.4350
+    },
+    {
+      "id": "RES_SUNRISE",
+      "name": "Sunrise Suburbs",
+      "type": "RESIDENTIAL",
+      "lat": 37.7950,
+      "lng": -122.4250
+    },
+    {
+      "id": "COMM_DOWNTOWN",
+      "name": "Downtown Commercial Plaza",
+      "type": "COMMERCIAL",
+      "lat": 37.7800,
+      "lng": -122.4050
+    },
+    {
+      "id": "COMM_FINANCIAL",
+      "name": "Financial Tech Hub",
+      "type": "COMMERCIAL",
+      "lat": 37.7890,
+      "lng": -122.3980
+    },
+    {
+      "id": "ACCIDENT_ZONE_1",
+      "name": "Foggy Bridge Interchange (Accident Prone)",
+      "type": "ACCIDENT_PRONE",
+      "lat": 37.7700,
+      "lng": -122.3950
+    },
+    {
+      "id": "ACCIDENT_ZONE_2",
+      "name": "High-Speed Ring Road Spot",
+      "type": "ACCIDENT_PRONE",
+      "lat": 37.7520,
+      "lng": -122.4050
+    }
+  ],
+  "roads": [
+    {
+      "id": "RD_1",
+      "source": "HOSP_METRO",
+      "destination": "JUNC_CENTRAL",
+      "distance": 1.2,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Metro Hospital Way"
+    },
+    {
+      "id": "RD_2",
+      "source": "JUNC_CENTRAL",
+      "destination": "POLICE_HQ",
+      "distance": 1.5,
+      "speed_limit": 50.0,
+      "traffic_level": "MEDIUM",
+      "status": "OPEN",
+      "name": "Civic Center Blvd"
+    },
+    {
+      "id": "RD_3",
+      "source": "POLICE_HQ",
+      "destination": "COMM_DOWNTOWN",
+      "distance": 2.0,
+      "speed_limit": 45.0,
+      "traffic_level": "HIGH",
+      "status": "OPEN",
+      "name": "Downtown Avenue"
+    },
+    {
+      "id": "RD_4",
+      "source": "COMM_DOWNTOWN",
+      "destination": "HOSP_HEART",
+      "distance": 1.8,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Heart Center Drive"
+    },
+    {
+      "id": "RD_5",
+      "source": "FIRE_CENTRAL",
+      "destination": "JUNC_CENTRAL",
+      "distance": 2.2,
+      "speed_limit": 60.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Firehouse Expressway"
+    },
+    {
+      "id": "RD_6",
+      "source": "FIRE_CENTRAL",
+      "destination": "RES_OAKRIDGE",
+      "distance": 2.5,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Oakridge Road"
+    },
+    {
+      "id": "RD_7",
+      "source": "RES_OAKRIDGE",
+      "destination": "FIRE_WEST",
+      "distance": 3.0,
+      "speed_limit": 50.0,
+      "traffic_level": "MEDIUM",
+      "status": "OPEN",
+      "name": "Westside Connector"
+    },
+    {
+      "id": "RD_8",
+      "source": "FIRE_WEST",
+      "destination": "RES_RIVERDALE",
+      "distance": 2.1,
+      "speed_limit": 45.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Riverdale Path"
+    },
+    {
+      "id": "RD_9",
+      "source": "RES_RIVERDALE",
+      "destination": "JUNC_SOUTH",
+      "distance": 2.8,
+      "speed_limit": 60.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "South Link Highway"
+    },
+    {
+      "id": "RD_10",
+      "source": "JUNC_SOUTH",
+      "destination": "JUNC_EXPRESS",
+      "distance": 3.5,
+      "speed_limit": 80.0,
+      "traffic_level": "MEDIUM",
+      "status": "OPEN",
+      "name": "Grand Expressway South"
+    },
+    {
+      "id": "RD_11",
+      "source": "JUNC_EXPRESS",
+      "destination": "JUNC_CENTRAL",
+      "distance": 2.4,
+      "speed_limit": 70.0,
+      "traffic_level": "HIGH",
+      "status": "OPEN",
+      "name": "Expressway Central Link"
+    },
+    {
+      "id": "RD_12",
+      "source": "JUNC_CENTRAL",
+      "destination": "JUNC_CLOVER",
+      "distance": 2.9,
+      "speed_limit": 60.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Cloverleaf Trunk"
+    },
+    {
+      "id": "RD_13",
+      "source": "JUNC_CLOVER",
+      "destination": "RES_SUNRISE",
+      "distance": 2.0,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Sunrise Avenue"
+    },
+    {
+      "id": "RD_14",
+      "source": "JUNC_CLOVER",
+      "destination": "POLICE_NORTH",
+      "distance": 1.7,
+      "speed_limit": 55.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "North Police Access"
+    },
+    {
+      "id": "RD_15",
+      "source": "POLICE_NORTH",
+      "destination": "COMM_FINANCIAL",
+      "distance": 1.4,
+      "speed_limit": 45.0,
+      "traffic_level": "HIGH",
+      "status": "OPEN",
+      "name": "Financial Corridor"
+    },
+    {
+      "id": "RD_16",
+      "source": "COMM_FINANCIAL",
+      "destination": "ACCIDENT_ZONE_1",
+      "distance": 3.2,
+      "speed_limit": 70.0,
+      "traffic_level": "SEVERE",
+      "status": "OPEN",
+      "name": "Foggy Bridge Way"
+    },
+    {
+      "id": "RD_17",
+      "source": "ACCIDENT_ZONE_1",
+      "destination": "COMM_DOWNTOWN",
+      "distance": 2.8,
+      "speed_limit": 60.0,
+      "traffic_level": "HIGH",
+      "status": "OPEN",
+      "name": "Downtown Bypass"
+    },
+    {
+      "id": "RD_18",
+      "source": "JUNC_EXPRESS",
+      "destination": "ACCIDENT_ZONE_2",
+      "distance": 2.6,
+      "speed_limit": 75.0,
+      "traffic_level": "MEDIUM",
+      "status": "OPEN",
+      "name": "Ring Road Sector A"
+    },
+    {
+      "id": "RD_19",
+      "source": "ACCIDENT_ZONE_2",
+      "destination": "ACCIDENT_ZONE_1",
+      "distance": 3.8,
+      "speed_limit": 80.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Ring Road Sector B"
+    },
+    {
+      "id": "RD_20",
+      "source": "HOSP_METRO",
+      "destination": "FIRE_CENTRAL",
+      "distance": 1.9,
+      "speed_limit": 55.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Emergency Arterial"
+    },
+    {
+      "id": "RD_21",
+      "source": "HOSP_HEART",
+      "destination": "POLICE_NORTH",
+      "distance": 2.3,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "North Heart Parkway"
+    },
+    {
+      "id": "RD_22",
+      "source": "RES_SUNRISE",
+      "destination": "HOSP_METRO",
+      "distance": 3.4,
+      "speed_limit": 60.0,
+      "traffic_level": "MEDIUM",
+      "status": "OPEN",
+      "name": "Sunrise Metro Connector"
+    },
+    {
+      "id": "RD_23",
+      "source": "JUNC_SOUTH",
+      "destination": "ACCIDENT_ZONE_2",
+      "distance": 2.2,
+      "speed_limit": 65.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "South Ring Feeder"
+    },
+    {
+      "id": "RD_24",
+      "source": "RES_OAKRIDGE",
+      "destination": "HOSP_METRO",
+      "distance": 2.7,
+      "speed_limit": 50.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Oakridge Hospital Access"
+    },
+    {
+      "id": "RD_25",
+      "source": "COMM_FINANCIAL",
+      "destination": "HOSP_HEART",
+      "distance": 1.6,
+      "speed_limit": 45.0,
+      "traffic_level": "LOW",
+      "status": "OPEN",
+      "name": "Tech Heart Passage"
+    }
+  ]
+}
